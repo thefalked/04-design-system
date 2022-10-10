@@ -4,13 +4,13 @@ import type { Meta, StoryObj } from "@storybook/react";
 export default {
   title: "Form/Button",
   component: Button,
-} as Meta;
 
-export const Primary: StoryObj = {
   args: {
     children: "Enviar",
   },
-};
+} as Meta;
+
+export const Primary: StoryObj = {};
 
 export const Big: StoryObj = {
   args: {
