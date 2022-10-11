@@ -1,5 +1,5 @@
-import { ComponentProps, ElementType } from 'react';
-import { styled } from '../styles';
+import { ComponentProps, ElementType } from 'react'
+import { styled } from '../styles'
 
 export const Heading = styled('h2', {
   fontFamily: '$default',
@@ -16,15 +16,16 @@ export const Heading = styled('h2', {
       '2xl': { fontSize: '$7xl' },
       '4xl': { fontSize: '$8xl' },
       '5xl': { fontSize: '$9xl' },
-    }
+    },
   },
 
   defaultVariants: {
-    size: 'md'
-  }
+    size: 'md',
+  },
 })
 
 export type HeadingProps = ComponentProps<typeof Heading> & {
   as?: ElementType
-};
+}
 
+Heading.displayName = 'Heading'

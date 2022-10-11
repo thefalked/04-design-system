@@ -1,5 +1,5 @@
-import { ComponentProps, ElementType } from 'react';
-import { styled } from '../styles';
+import { ComponentProps, ElementType } from 'react'
+import { styled } from '../styles'
 
 export const Text = styled('p', {
   fontFamily: '$default',
@@ -22,14 +22,16 @@ export const Text = styled('p', {
       '7xl': { fontSize: '$7xl' },
       '8xl': { fontSize: '$8xl' },
       '9xl': { fontSize: '$9xl' },
-    }
+    },
   },
 
   defaultVariants: {
-    size: 'md'
-  }
+    size: 'md',
+  },
 })
 
 export type TextProps = ComponentProps<typeof Text> & {
   as?: ElementType
-};
+}
+
+Text.displayName = 'Text'

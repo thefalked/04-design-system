@@ -1,5 +1,5 @@
-import { ComponentProps, ElementType } from 'react';
-import { styled } from '../styles';
+import { ComponentProps, ElementType } from 'react'
+import { styled } from '../styles'
 
 export const Button = styled('button', {
   all: 'unset',
@@ -11,7 +11,7 @@ export const Button = styled('button', {
   minWidth: 120,
   boxSizing: 'border-box',
   padding: '0 $4',
-  
+
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
@@ -68,7 +68,7 @@ export const Button = styled('button', {
         '&:disabled': {
           color: '$gray600',
         },
-      }
+      },
     },
 
     size: {
@@ -78,17 +78,18 @@ export const Button = styled('button', {
 
       md: {
         height: 46,
-      }
-    }
+      },
+    },
   },
 
   defaultVariants: {
     variant: 'primary',
     size: 'md',
-  }
+  },
 })
 
 export type ButtonProps = ComponentProps<typeof Button> & {
   as?: ElementType
-};
+}
 
+Button.displayName = 'Button'
