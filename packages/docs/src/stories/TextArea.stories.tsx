@@ -1,32 +1,34 @@
-import { Box, Text, TextArea, TextAreaProps } from "@ignite-ui/react";
-import type { Meta, StoryObj } from "@storybook/react";
+import { Box, Text, TextArea, TextAreaProps } from '@ignite-ui/react'
+import type { Meta, StoryObj } from '@storybook/react'
 
 export default {
-  title: "Form/Text Area",
+  title: 'Form/Text Area',
   component: TextArea,
 
-  args: {
-  },
+  args: {},
   decorators: [
     (Story) => {
       return (
-        <Box as='label' css={{ display: 'flex', flexDirection: 'column', gap: '$2' }}>
-          <Text size='sm'>Observations</Text>
+        <Box
+          as="label"
+          css={{ display: 'flex', flexDirection: 'column', gap: '$2' }}
+        >
+          <Text size="sm">Observations</Text>
           {Story()}
         </Box>
       )
-    }
-  ]
-} as Meta;
+    },
+  ],
+} as Meta
 
 export const Primary: StoryObj<TextAreaProps> = {
   args: {
-    placeholder: 'Observation'
-  }
-};
+    placeholder: 'Observation',
+  },
+}
 
 export const Disabled: StoryObj<TextAreaProps> = {
   args: {
-    disabled: true
-  }
-};
+    disabled: true,
+  },
+}

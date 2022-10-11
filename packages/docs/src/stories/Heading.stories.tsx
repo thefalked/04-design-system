@@ -1,16 +1,16 @@
-import { Heading, HeadingProps } from "@ignite-ui/react";
-import type { Meta, StoryObj } from "@storybook/react";
+import { Heading, HeadingProps } from '@ignite-ui/react'
+import type { Meta, StoryObj } from '@storybook/react'
 
 export default {
-  title: "Form/Heading",
+  title: 'Form/Heading',
   component: Heading,
 
   args: {
     children: 'Custom Title',
   },
-} as Meta;
+} as Meta
 
-export const Primary: StoryObj<HeadingProps> = {};
+export const Primary: StoryObj<HeadingProps> = {}
 
 export const CustomTag: StoryObj<HeadingProps> = {
   args: {
@@ -20,8 +20,9 @@ export const CustomTag: StoryObj<HeadingProps> = {
   parameters: {
     docs: {
       description: {
-        story: 'By default the component will always be an `h2`, but we can change that with the prop `as`.'
-      }
-    }
-  }
-};
+        story:
+          'By default the component will always be an `h2`, but we can change that with the prop `as`.',
+      },
+    },
+  },
+}
