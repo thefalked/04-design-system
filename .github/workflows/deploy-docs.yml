@@ -20,6 +20,9 @@ jobs:
       - run: npm ci
 
       - run: npm run build
+        env:
+          TURBO_TOKEN: ${{ secrets.VERCEL_CACHE_KEY }}
+          TURBO_TEAM: ${{ secrets.VERCEL_CACHE_TEAM_SLUG }}
 
       - name: Deploy storybook
         working-directory: ./packages/docs
