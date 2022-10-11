@@ -1,5 +1,5 @@
-import { Text, TextProps } from '@ignite-ui/react'
 import type { Meta, StoryObj } from '@storybook/react'
+import { Text, TextProps } from '@thefalked-ui/react'
 
 export default {
   title: 'Form/Text',
