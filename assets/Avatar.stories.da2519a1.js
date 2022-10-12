@@ -1,0 +1,2 @@
+import{A as t}from"./index.d372127c.js";import"./index.fe7f3c3b.js";import"./iframe.fd79c8ad.js";import"./index.20b1b074.js";import"./jsx-runtime.0d7edc57.js";const p={title:"Data display/Avatar",component:t,args:{src:"https://github.com/thefalked.png",alt:"Giuliano"},argTypes:{src:{control:{type:"text"}}}},c={},e={args:{src:void 0}},l=["Primary","WithFallback"];export{c as Primary,e as WithFallback,l as __namedExportsOrder,p as default};
+//# sourceMappingURL=Avatar.stories.da2519a1.js.map
